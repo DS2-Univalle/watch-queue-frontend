@@ -45,3 +45,5 @@ Add the following to your .vscode/settings.json file:
 
 ```
 
+Configuración con Slack
+
