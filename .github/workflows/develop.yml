@@ -28,9 +28,13 @@ jobs:
       run: npm run build
 
     - name: Deploy
-      uses: lbertenasco/s3-deploy@v1
+      uses: reggionick/s3-deploy@v3
       with:
         folder: dist
         bucket: ${{ secrets.S3_BUCKET }}
         dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
-        invalidation: / *
+        invalidation: /
+        delete-removed: true
+        no-cache: true
+        private: true
+        files-to-include: ".*/*,*/*,**"
