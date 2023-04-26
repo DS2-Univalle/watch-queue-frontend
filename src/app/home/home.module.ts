@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { MoviesComponent } from './components/movies/movies.component';
 import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
-
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,8 @@ import { MovieDetailComponent } from './components/movie-detail/movie-detail.com
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SharedModule
   ]
 })
 export class HomeModule { }

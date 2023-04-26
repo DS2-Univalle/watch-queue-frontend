@@ -1,8 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
 :root {
   --darkGray: #373737 !important;
   --darkGreen: #005500 !important;
   --lightGray: #7A7A7A !important;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 input:focus,
@@ -14,6 +20,16 @@ input.form-control:focus {
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
 }
 
 .btn-primary {
