@@ -7,6 +7,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { CardLoginComponent } from './components/card-login/card-login.component';
 import { CardSignupComponent } from './components/card-signup/card-signup.component';
 import { BackgroundComponent } from './components/background/background.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { BackgroundComponent } from './components/background/background.componen
     SignupComponent,
     CardLoginComponent,
     CardSignupComponent,
-    BackgroundComponent
+    BackgroundComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule,
