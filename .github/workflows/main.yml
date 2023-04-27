@@ -1,0 +1,24 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ develop ]
+
+jobs:
+  build:
+    name: Build and Push
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build the Docker image
+      run: |
+        docker build -t my-image-name:latest .
+        docker tag my-image-name:latest my-aws-repo-url:latest
+
+    - name: Push the Docker image to AWS ECR
+      run: |
+        aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ECR_REGISTRY }}
+        docker push my-aws-repo-url:latest
