@@ -3,8 +3,12 @@
   padding-left: 15px;
   background-color: rgba(0, 0, 0, 0.9);
   height: 100vh;
-  width: 230px;
+  width: 40vh;
   border-radius: 0px 10px 10px 0px;
+}
+
+.container-fluid {
+  width: 89%;
 }
 
 .nav-title {
@@ -21,12 +25,12 @@
   border-radius: 10px;
 }
 
-// .nav-link:focus {
-//   background-color: green;
-//   width: 160px !important;
-//   max-width: 160px !important;
-//   border-radius: 10px;
-// }
+.nav-link:focus {
+  background-color: green;
+  width: 160px !important;
+  max-width: 160px !important;
+  border-radius: 10px;
+}
 
 h2 {
   color: white;
@@ -36,4 +40,8 @@ a {
   cursor: pointer;
   text-decoration: none;
   color: white !important;
+}
+
+img {
+  height: 80px;
 }
