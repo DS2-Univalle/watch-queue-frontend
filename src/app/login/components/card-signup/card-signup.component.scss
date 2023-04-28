@@ -1,0 +1,26 @@
+.container {
+  width: 600px;
+  margin-top: 4%;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+.card-body {
+  padding: 40px;
+}
+
+.form-control {
+  background-color: var(--darkGray);
+}
+
+label,
+input {
+  color: white !important;
+}
+
+input::placeholder {
+  color: var(--lightGray) !important
+}
