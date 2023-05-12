@@ -1,15 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-card-signup',
   templateUrl: './card-signup.component.html',
-  styleUrls: ['./card-signup.component.scss']
+  styleUrls: ['./card-signup.component.scss'],
 })
-export class CardSignupComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class CardSignupComponent {}

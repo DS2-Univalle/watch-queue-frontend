@@ -9,7 +9,6 @@ import { CardSignupComponent } from './components/card-signup/card-signup.compon
 import { BackgroundComponent } from './components/background/background.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
-
 @NgModule({
   declarations: [
     SigninComponent,
@@ -17,11 +16,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     CardLoginComponent,
     CardSignupComponent,
     BackgroundComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
-  imports: [
-    CommonModule,
-    LoginRoutingModule
-  ]
+  imports: [CommonModule, LoginRoutingModule],
 })
-export class LoginModule { }
+export class LoginModule {}

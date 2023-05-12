@@ -7,17 +7,13 @@ import { FavoritesComponent } from './components/favorites/favorites.component';
 import { WatchedComponent } from './components/watched/watched.component';
 import { LibraryComponent } from './components/library/library.component';
 
-
 @NgModule({
   declarations: [
     ToWatchComponent,
     FavoritesComponent,
     WatchedComponent,
-    LibraryComponent
+    LibraryComponent,
   ],
-  imports: [
-    CommonModule,
-    WatchlistRoutingModule
-  ]
+  imports: [CommonModule, WatchlistRoutingModule],
 })
-export class WatchlistModule { }
+export class WatchlistModule {}

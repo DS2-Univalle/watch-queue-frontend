@@ -5,20 +5,9 @@ import { RouterModule } from '@angular/router';
 import { InfoUserComponent } from './components/info-user/info-user.component';
 import { BackgroundComponent } from './components/background/background.component';
 
-
-
 @NgModule({
-  declarations: [
-    NavComponent,
-    InfoUserComponent,
-    BackgroundComponent
-  ],
-  imports: [
-    CommonModule,
-    RouterModule
-  ],
-  exports: [
-    RouterModule
-  ]
+  declarations: [NavComponent, InfoUserComponent, BackgroundComponent],
+  imports: [CommonModule, RouterModule],
+  exports: [RouterModule],
 })
-export class SharedModule { }
+export class SharedModule {}

@@ -15,13 +15,13 @@ const routes: Routes = [
         pathMatch: 'full',
       },
       { path: 'movies', component: MoviesComponent },
-      { path: 'movie/:id', component: MovieDetailComponent }
-    ]
-  }
+      { path: 'movie/:id', component: MovieDetailComponent },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class HomeRoutingModule { }
+export class HomeRoutingModule {}
