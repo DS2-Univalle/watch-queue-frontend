@@ -1,11 +1,8 @@
 name: Run test for angular
 
-on:
-  pull_request:
-    branches:
-      - develop
+on: pull_request
 
-jobs:
+jobs: 
   unit-test:
     runs-on: ubuntu-latest
     steps:
@@ -13,25 +10,9 @@ jobs:
         uses: actions/checkout@v3
       - name: Node setup
         uses: actions/setup-node@v3
-        with:
+        with: 
           node-version: 16.x
       - name: Install dependencies
         run: npm ci
       - name: Run tests
         run: npm run test -- --no-watch --code-coverage --browsers=ChromeHeadlessCI
-      - name: Build the app
-        run: npm run build
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v2
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
-      - name: Sync files to S3 bucket
-        run: |
-          aws s3 sync dist/watch-queue s3://watchqueue-dev --delete
-          echo "Bucket sync completed!"
-      - name: Invalidate CloudFront cache
-        run: |
-          aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION_ID} --paths "/*"
-          echo "CloudFront invalidation submitted!"
