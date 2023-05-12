@@ -47,3 +47,6 @@ Add the following to your .vscode/settings.json file:
 
 Configuración con Slack
 
+## Docker 
+* Crear imagen `docker build -t watchqueue .`
+* Correr contenedor expuesto en el puerto 80 `docker run -dp 3000:80 watchqueue`
