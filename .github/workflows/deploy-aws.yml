@@ -1,9 +1,9 @@
 name: Run deploy on aws
 
-on: 
-  push: 
+on:
+  push:
     branches:
-      - "main"
+      - "develop"
 
 jobs:
   deploy:
@@ -16,9 +16,9 @@ jobs:
         with:
           node-version: 16.x
       - name: Install dependencies
-        run: npm ci 
+        run: npm ci
       - name: Build the app
-        run: npm run build --prod
+        run: npm run build
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
