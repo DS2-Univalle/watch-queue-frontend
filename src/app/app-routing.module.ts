@@ -14,32 +14,41 @@ const routes: Routes = [
       },
       {
         path: '',
-        loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
+        loadChildren: () =>
+          import('./login/login.module').then(m => m.LoginModule),
       },
       {
         path: 'home',
-        loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+        loadChildren: () =>
+          import('./home/home.module').then(m => m.HomeModule),
       },
       {
         path: 'watchlist',
-        loadChildren: () => import('./watchlist/watchlist.module').then(m => m.WatchlistModule)
+        loadChildren: () =>
+          import('./watchlist/watchlist.module').then(m => m.WatchlistModule),
       },
       {
         path: 'report',
-        loadChildren: () => import('./report/report.module').then(m => m.ReportModule)
+        loadChildren: () =>
+          import('./report/report.module').then(m => m.ReportModule),
       },
     ],
   },
   {
     path: '**',
-    loadChildren: () => import('./page-not-found/page-not-found.module').then(m => m.PageNotFoundModule)
+    loadChildren: () =>
+      import('./page-not-found/page-not-found.module').then(
+        m => m.PageNotFoundModule
+      ),
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    preloadingStrategy: PreloadAllModules
-  })],
+  imports: [
+    RouterModule.forRoot(routes, {
+      preloadingStrategy: PreloadAllModules,
+    }),
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { BackgroundComponent } from './background.component';
 
 describe('BackgroundComponent', () => {
@@ -8,9 +7,8 @@ describe('BackgroundComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BackgroundComponent ]
-    })
-    .compileComponents();
+      declarations: [BackgroundComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(BackgroundComponent);
     component = fixture.componentInstance;

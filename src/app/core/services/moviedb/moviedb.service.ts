@@ -3,20 +3,21 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MoviedbService {
-
-  private url_api = environment.url_api;
-  private bearer_token = environment.bearer_token;
-  private headers = new HttpHeaders({
+  private _urlApi = environment.url_api;
+  private _bearerToken = environment.bearer_token;
+  private _headers = new HttpHeaders({
     'Content-Type': 'application/json',
-    'Authorization': `Bearer ${this.bearer_token}`
-  })
+    Authorization: `Bearer ${this._bearerToken}`,
+  });
 
-  constructor(private http: HttpClient) { }
+  constructor(private _http: HttpClient) {}
 
   getMovies() {
-    return this.http.get(this.url_api+'tv/popular', { headers: this.headers });
+    return this._http.get(this._urlApi + 'tv/popular', {
+      headers: this._headers,
+    });
   }
 }
