@@ -33,6 +33,3 @@ jobs:
         run: |
           aws cloudfront create-invalidation --distribution-id EL5ZZ3D315DG2 --paths "/*"
           echo "CloudFront invalidation submitted!"
-
-
-
