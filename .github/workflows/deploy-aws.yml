@@ -25,11 +25,13 @@ jobs:
           aws-access-key-id: AKIAYTLXNMQ5OB5GBHHD
           aws-secret-access-key: 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
           aws-region: us-east-1
+      - name: Grant executable permissions to npx
+        run: chmod +x /opt/hostedtoolcache/node/16.20.0/x64/bin/npx
       - name: Deploy
         uses: lbertenasco/s3-deploy@v1
         with:
-          folder: build
-          bucket: watchqueue-dev
+          folder: dist/watch-queue
+          bucket: watch-queue
           dist-id: EL5ZZ3D315DG2
           invalidation: / *
 
