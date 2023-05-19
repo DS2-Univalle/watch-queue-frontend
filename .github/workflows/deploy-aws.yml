@@ -31,7 +31,7 @@ jobs:
         uses: lbertenasco/s3-deploy@v1
         with:
           folder: dist/watch-queue
-          bucket: watch-queue
+          bucket: watchqueue-dev
           dist-id: EL5ZZ3D315DG2
           invalidation: / *
 
