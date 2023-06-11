@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test --no-watch --code-coverage --browsers=ChromeHeadlessCI",
     "lint": "ng lint",
-    "lint:fix": "ng lint --fix"
+    "lint:fix": "ng lint --fix",
+    "sonar": "sonar-scanner"
   },
   "private": true,
   "dependencies": {
@@ -51,6 +52,7 @@
     "karma-mocha-reporter": "^2.2.5",
     "prettier": "^2.8.7",
     "prettier-eslint": "^15.0.1",
+    "sonar-scanner": "^3.1.0",
     "typescript": "~4.7.2"
   },
   "husky": {

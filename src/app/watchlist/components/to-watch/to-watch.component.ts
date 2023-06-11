@@ -1,15 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-to-watch',
   templateUrl: './to-watch.component.html',
-  styleUrls: ['./to-watch.component.scss']
+  styleUrls: ['./to-watch.component.scss'],
 })
-export class ToWatchComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class ToWatchComponent {}

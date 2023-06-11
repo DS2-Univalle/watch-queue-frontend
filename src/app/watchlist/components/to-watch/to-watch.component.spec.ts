@@ -8,9 +8,8 @@ describe('ToWatchComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ToWatchComponent ]
-    })
-    .compileComponents();
+      declarations: [ToWatchComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(ToWatchComponent);
     component = fixture.componentInstance;

@@ -1,15 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-watched',
   templateUrl: './watched.component.html',
-  styleUrls: ['./watched.component.scss']
+  styleUrls: ['./watched.component.scss'],
 })
-export class WatchedComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class WatchedComponent {}

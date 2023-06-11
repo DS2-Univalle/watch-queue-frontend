@@ -8,7 +8,7 @@ describe('MoviedbService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      providers: [MoviedbService]
+      providers: [MoviedbService],
     });
     service = TestBed.inject(MoviedbService);
   });

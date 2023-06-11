@@ -1,3 +1,9 @@
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=DS2-Univalle_watchQueue&metric=coverage)](https://sonarcloud.io/summary/new_code?id=DS2-Univalle_watchQueue)
+
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=DS2-Univalle_watchQueue&metric=bugs)](https://sonarcloud.io/summary/new_code?id=DS2-Univalle_watchQueue)
+
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=DS2-Univalle_watchQueue&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=DS2-Univalle_watchQueue)
+
 # WatchQueue
 Web platform for the management of movies pending viewing by a user
 ### Initialization 
