@@ -13,13 +13,13 @@ const routes: Routes = [
         redirectTo: '/watchlist/library',
         pathMatch: 'full',
       },
-      { path: 'library', component: LibraryComponent }
-    ]
-  }
+      { path: 'library', component: LibraryComponent },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class WatchlistRoutingModule { }
+export class WatchlistRoutingModule {}
