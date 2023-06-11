@@ -22,16 +22,6 @@ const routes: Routes = [
         loadChildren: () =>
           import('./home/home.module').then(m => m.HomeModule),
       },
-      {
-        path: 'watchlist',
-        loadChildren: () =>
-          import('./watchlist/watchlist.module').then(m => m.WatchlistModule),
-      },
-      {
-        path: 'report',
-        loadChildren: () =>
-          import('./report/report.module').then(m => m.ReportModule),
-      },
     ],
   },
   {
