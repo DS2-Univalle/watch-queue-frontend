@@ -17,7 +17,8 @@
       *ngFor="let movie of movies"
       class="col-lg-2 col-md-4"
       [name]="movie.original_title"
-      [poster_path]="'https://image.tmdb.org/t/p/w300' + movie.poster_path" [first_air_date]="movie.release_date"
+      [poster_path]="'https://image.tmdb.org/t/p/w300' + movie.poster_path"
+      [first_air_date]="movie.release_date"
       [vote_average]="movie.vote_average"></app-card-movie>
   </div>
 </div>
