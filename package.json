@@ -50,6 +50,7 @@
     "karma-jasmine": "~5.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "karma-mocha-reporter": "^2.2.5",
+    "karma-mocha-reporter": "^2.2.5",
     "prettier": "^2.8.7",
     "prettier-eslint": "^15.0.1",
     "sonar-scanner": "^3.1.0",
@@ -57,6 +58,7 @@
   },
   "husky": {
     "hooks": {
+      "pre-commit": "npm run lint",
       "pre-commit": "npm run lint",
       "commitmsg": "commit-msg"
     }

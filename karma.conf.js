@@ -12,6 +12,8 @@ module.exports = function (config) {
       require('karma-coverage'),
       require('@angular-devkit/build-angular/plugins/karma'),
       require('karma-mocha-reporter'),
+      require('@angular-devkit/build-angular/plugins/karma'),
+      require('karma-mocha-reporter'),
     ],
     client: {
       jasmine: {
@@ -21,8 +23,10 @@ module.exports = function (config) {
         // or set a specific seed with `seed: 4321`
       },
       clearContext: false, // leave Jasmine Spec Runner output visible in browser
+      clearContext: false, // leave Jasmine Spec Runner output visible in browser
     },
     jasmineHtmlReporter: {
+      suppressAll: true, // removes the duplicated traces
       suppressAll: true, // removes the duplicated traces
     },
     coverageReporter: {
@@ -43,6 +47,7 @@ module.exports = function (config) {
       },
     },
     reporters: ['mocha'],
+    reporters: ['mocha'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
@@ -54,7 +59,15 @@ module.exports = function (config) {
         flags: ['--no-sandbox'],
       },
     },
+    browsers: ['ChromeHeadless'],
+    customLaunchers: {
+      ChromeHeadlessCI: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox'],
+      },
+    },
     singleRun: false,
+    restartOnFileChange: true,
     restartOnFileChange: true,
   });
 };
