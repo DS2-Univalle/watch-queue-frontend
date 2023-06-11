@@ -16,7 +16,7 @@ export class MoviedbService {
   constructor(private _http: HttpClient) {}
 
   getMovies() {
-    return this._http.get(this._urlApi + 'tv/popular', {
+    return this._http.get(this._urlApi + 'movie/popular', {
       headers: this._headers,
     });
   }

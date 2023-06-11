@@ -1,0 +1,22 @@
+h1, h3 {
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.background {
+    background-image: linear-gradient(to bottom, #1a446d, #152d48), url("./../../../../assets/images/fondoSearch.jpeg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 550px;
+}

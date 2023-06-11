@@ -1,0 +1,8 @@
+<div class="card">
+  <img [src]="poster_path" class="card-img-top" alt="card" />
+  <div class="card-body">
+    <h5 class="card-title">{{ name }}</h5>
+    <p class="card-text">{{ first_air_date | date: 'mediumDate' }}</p>
+    <p class="card-text">{{ vote_average }}</p>
+  </div>
+</div>

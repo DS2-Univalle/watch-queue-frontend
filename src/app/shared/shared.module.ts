@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { NavComponent } from './components/nav/nav.component';
-import { InfoUserComponent } from './components/info-user/info-user.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { BackgroundComponent } from './components/background/background.component';
 
 @NgModule({
-  declarations: [NavComponent, InfoUserComponent, BackgroundComponent],
+  declarations: [NavbarComponent, BackgroundComponent],
   imports: [CommonModule, RouterModule],
-  exports: [RouterModule, BackgroundComponent, NavComponent, InfoUserComponent],
+  exports: [RouterModule, NavbarComponent, BackgroundComponent],
 })
 export class SharedModule {}

@@ -7,6 +7,7 @@ import { MoviedbService } from 'src/app/core/services/moviedb/moviedb.service';
   styleUrls: ['./movies.component.scss'],
 })
 export class MoviesComponent implements OnInit {
+  public movies!: any;
   constructor(private _movieDbService: MoviedbService) {}
 
   ngOnInit(): void {
@@ -14,6 +15,8 @@ export class MoviesComponent implements OnInit {
   }
 
   fetchMovies() {
-    this._movieDbService.getMovies().subscribe();
+    this._movieDbService.getMovies().subscribe((res: any) => {
+      this.movies = res.results;
+    });
   }
 }
