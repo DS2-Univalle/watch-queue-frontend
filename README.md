@@ -1,3 +1,9 @@
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=DS2-Univalle_watchQueue&metric=coverage)](https://sonarcloud.io/summary/new_code?id=DS2-Univalle_watchQueue)
+
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=DS2-Univalle_watchQueue&metric=bugs)](https://sonarcloud.io/summary/new_code?id=DS2-Univalle_watchQueue)
+
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=DS2-Univalle_watchQueue&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=DS2-Univalle_watchQueue)
+
 # WatchQueue
 Web platform for the management of movies pending viewing by a user
 ### Initialization 
@@ -47,3 +53,6 @@ Add the following to your .vscode/settings.json file:
 
 Configuración con Slack
 
+## Docker 
+* Crear imagen `docker build -t watchqueue .`
+* Correr contenedor expuesto en el puerto 80 `docker run -dp 3000:80 watchqueue`
