@@ -15,8 +15,8 @@ WatchQueue is a simple project with authentication system and in turn consumes a
 
 1. The developer is in charge of creating the corresponding functionalities on his local machine and once finished, performs a git push to a feature-branch, bugfix-branch, etc.
 
-2. Once the changes are in the github, a github action is executed, which is located at: :link: [Github actions - tests](https://github.com/DS2-Univalle/watch-queue-frontend/blob/main/.github/workflows/tests.yml). This action is in charge of performing the unit tests of the application and executing a code scan with sonarcloud.
-In our case, we use karma to run the unit tests for each component with the follow command: `ng test`. :link: [Karma](https://karma-runner.github.io).
+2. Once the changes are in the github, a github action is executed, which is located at: :link: [Github action - tests](https://github.com/DS2-Univalle/watch-queue-frontend/blob/main/.github/workflows/tests.yml). This action is in charge of performing the unit tests of the application and executing a code scan with sonarcloud.
+In our case, we use karma to run the unit tests for each component with the follow command: `ng test` :link: [Karma](https://karma-runner.github.io).
 
 
 3. If the tests pass, the developer is responsible for sending a pull request to the develop branch.
